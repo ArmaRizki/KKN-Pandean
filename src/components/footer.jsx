@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../assets/logo-saujana-small.png";
 import logo from "../assets/logo-saujana-big.png";
+import Logo_mgl from "../assets/logo-mgl.png";
 
 const footer = () => {
   return (
@@ -15,15 +16,25 @@ const footer = () => {
           <div className="mx-4 flex justify-evenly gap-y-2 xl:flex-row xl:items-start flex-col gap-8 mobile:text-2xl">
             <div className="flex flex-col items-center self-center xl:items-start xl:self-auto">
               <div className="flex items-center sm:px-[15rem] xl:px-0 xl:gap-10 xl:flex-row mb-4 xl:py-12">
+              <img
+                  src={Logo_mgl}
+                  alt=""
+                  className="transition-all h-[100px] ml-3 xl:hidden xl:h-28"
+                />
+              <img
+                  src={Logo_mgl}
+                  alt=""
+                  className=" hidden transition-all ml-5 xl:inline-flex xl:h-28"
+                />
                 <img
                   src={Logo}
                   alt=""
-                  className="transition-all xl:hidden xl:h-28 xl:scale-[1.4]"
+                  className="transition-all xl:hidden xl:h-28 xl:scale-[1]"
                 />
                 <img
                   src={logo}
                   alt=""
-                  className=" hidden transition-all xl:inline-flex xl:h-28 xl:scale-[1.4]"
+                  className=" hidden transition-all xl:inline-flex xl:h-28 xl:scale-[1]"
                 />
                 <span className="hidden xl:block">
                   <p className="">
@@ -117,7 +128,7 @@ const footer = () => {
         </div>
       </div>
       <p className="text-xs text-white bg-light-green mt-3 py-2">
-        Developed by Tim KKN Saujana Ngablak 2023
+       Dikembangkan oleh Tim KKN-PPM UGM Saujana Ngablak 2024
       </p>
     </footer>
   );
